@@ -1,5 +1,5 @@
 //select the form input from the DOM 
-
+const formEl = document.querySelector('.form-member')
 const cardsEl = document.querySelector('#cards .row')
 const teamMembers = [
     {
@@ -40,7 +40,44 @@ const teamMembers = [
     }
   ];
 
-  //functions
+//add an event listener on click
+
+formEl.addEventListener('submit', (e) =>{
+  
+  e.preventDefault()
+
+  //now we need to select the items in the form
+  const name = document.querySelector('input[name="name"]').value
+  console.log(name);
+
+  const role = document.querySelector('input[name="role"]').value
+  console.log(role);
+
+  const email = document.querySelector('input[name="email"]').value
+  console.log(email);
+
+  const img = document.querySelector('input[name="img"]').value
+  console.log(img);
+
+  //Now we need to create an object
+  let teamMember = {
+    name,
+    role,
+    email,
+    img
+  }
+
+  const markup = cardMemberMaker(teamMember)
+
+  return markup
+
+  //restore the form inputs elements
+  formEl.reset()
+
+})
+
+
+//functions
 
   function cardMemberMaker(obj) {
 
@@ -84,3 +121,5 @@ function renderTeamMembers(teamMembers, cardsEl) {
 }
 
 renderTeamMembers(teamMembers, cardsEl)
+
+
