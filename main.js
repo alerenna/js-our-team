@@ -52,14 +52,14 @@ const teamMembers = [
 
     const markup = `
         <div class="col">
-            <div class="card-horizontal mb-3 bg-black border border-radius: 0"">
+            <div class="card-horizontal bg-black border border-radius: 0"">
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4">
                         <img src="${img}" alt="Card title" class="img-fluid">
                     </div>
                     <div class="col-md-8">
                         <div class="p-3 card-body">
-                            <h3 class="fs-5 fw-bold name text-light mb-1">${name}</h3>
+                            <h3 class="fs-6 fw-bold name text-light mb-1">${name}</h3>
                             <p class="role text-light">${role}</p>
                             <p class="mail">${email}</p>
                         </div>
