@@ -59,7 +59,7 @@ const teamMembers = [
                     </div>
                     <div class="col-md-8">
                         <div class="p-3 card-body">
-                            <h3 class="fs-6 fw-bold name text-light mb-1">${name}</h3>
+                            <h3 class="fs-8 fw-bold name text-light mb-1">${name}</h3>
                             <p class="role text-light">${role}</p>
                             <p class="mail">${email}</p>
                         </div>
